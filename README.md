@@ -14,11 +14,11 @@ To get a local copy up and running, follow these steps:
 
 0. Clone the repository:
    ```bash
-   git clone https://github.com/TheCoderAdi/React-Native-Projects.git
+   git clone https://github.com/TheCoderAdi/react-native-projects.git
    ```
 1. Navigate to the project directory:
    ```bash
-   cd React-Native-Projects
+   cd react-native-projects
    ```
 2. Install the dependencies:
    ```bash
