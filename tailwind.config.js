@@ -2,8 +2,8 @@
 module.exports = {
   content: [
     "./index.{js,ts,tsx}",
-    "./app/**/*.{js,ts,tsx}",
-    "./components/**/*.{js,ts,tsx}",
+    "./app/**/*.{js,ts,tsx,jsx}",
+    "./components/**/*.{js,ts,tsx,jsx}",
   ],
 
   theme: {
