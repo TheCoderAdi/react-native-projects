@@ -72,7 +72,7 @@ export default function Calculator() {
   };
 
   return (
-    <SafeAreaView className="flex-1 bg-[#151515]">
+    <SafeAreaView className="flex-1 bg-[#151515] py-5">
       <View className="flex-1 items-end justify-center gap-14 border-b-4 border-gray-500 p-5">
         <Text className="text-5xl text-white">{input}</Text>
         <Text className="text-3xl text-gray-400">{result}</Text>
