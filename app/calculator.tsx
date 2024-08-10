@@ -19,7 +19,26 @@ export default function Calculator() {
         setResult("Error");
       }
     } else if (value === "()") {
-      setInput(input + "()");
+      setInput((prevInput) => {
+        const lastChar = prevInput.slice(-1);
+        const openBrackets = (prevInput.match(/\(/g) || []).length;
+        const closeBrackets = (prevInput.match(/\)/g) || []).length;
+
+        if (
+          openBrackets > closeBrackets &&
+          (lastChar === ")" || !isNaN(Number(lastChar)))
+        ) {
+          return prevInput + ")";
+        } else if (
+          lastChar === "(" ||
+          lastChar === "" ||
+          isNaN(Number(lastChar))
+        ) {
+          return prevInput + "(";
+        } else {
+          return prevInput + "*(";
+        }
+      });
     } else if (value === "+/-") {
       setInput((prevInput) => {
         if (prevInput.startsWith("-")) {
