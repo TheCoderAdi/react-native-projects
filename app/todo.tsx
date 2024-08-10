@@ -68,6 +68,7 @@ export default function Todo() {
           className="full rounded-lg border border-gray-300 bg-white p-3 font-SpaceMono text-2xl"
           placeholderTextColor={"#000"}
           onSubmitEditing={addTodo}
+          style={{ paddingRight: 40 }}
         />
         <Pressable className="absolute right-0 top-1 p-2" onPress={addTodo}>
           <Entypo name="plus" size={30} color="black" />
@@ -76,7 +77,7 @@ export default function Todo() {
       <ScrollView className="mt-5 h-full w-full">
         {todos.length === 0 ? (
           <View className="flex items-center justify-center">
-            <Text className="text-center font-SpaceMono text-5xl text-cyan-500">
+            <Text className="text-center p-1 font-SpaceMono text-5xl text-cyan-500">
               No todos yet
             </Text>
           </View>
